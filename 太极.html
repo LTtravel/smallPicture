@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>太极图</title>
+	<meta charset="UTF-8">
+	<style>
+		#container{
+			width: 100px;
+			height: 200px;
+			border: #000 solid 1px;
+			border-width: 1px 100px 1px 1px;/*上右下左*/
+			border-radius: 100%;
+			position: relative;
+		}
+		#container #up{
+			width: 20px;
+			height: 20px;
+			border: #000 solid 1px;
+			border-width:40px 40px 40px 40px; 
+			background: #fff;
+			position: absolute;
+			left: 50%;
+			/*z-index: 1px;*/
+			border-radius: 100%;
+		}
+		#down{
+			width: 20px;
+			height: 20px;
+			border: #fff solid 1px;
+			border-width:40px 40px 40px 40px; 
+			background: #000;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			/*margin-top: -10px;*/
+			/*z-index: 1px;*/
+			border-radius: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="up"></div>
+		<div id="down"></div>
+	</div>
+</body>
+</html>
